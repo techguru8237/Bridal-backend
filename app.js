@@ -16,9 +16,7 @@ const paymentRoute = require('./routes/payment');
 mongoose.Promise = global.Promise;
 
 mongoose
-  .connect(process.env.DB_URI, {
-    directConnection: true,
-  })
+  .connect(process.env.DB_URI)
   .then(
     () => {
       console.log('Connected to mongoDB');
