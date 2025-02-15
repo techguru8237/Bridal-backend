@@ -19,7 +19,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-// Create a Product
 // First save files and save file links to Database
 router.post(
   '/create',
